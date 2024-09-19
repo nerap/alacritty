@@ -13,7 +13,8 @@ decorations = "Buttonless"
 
 [font]
 normal.family = "Hack Nerd Font"
+normal.style = "Regular"
 
 #regular
-size = 12
+size = 14
 
