@@ -12,7 +12,7 @@ normal.family = "Hack Nerd Font"
 normal.style = "Regular"
 
 #regular
-size = 16
+size = 14
 
 [general]
 import = [
