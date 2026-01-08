@@ -12,7 +12,13 @@ normal.family = "Hack Nerd Font"
 normal.style = "Regular"
 
 #regular
-size = 14
+size = 16
+
+# Keyboard bindings
+[[keyboard.bindings]]
+key = "I"
+mods = "Control"
+chars = "\u001b[105;5u"
 
 [general]
 import = [
