@@ -8,17 +8,32 @@ padding.y = 12
 decorations = "Buttonless"
 
 [font]
-normal.family = "Hack Nerd Font"
-normal.style = "Regular"
-
-#regular
-size = 16
+size = 14
+normal = { family = "Hack Nerd Font", style = "Regular" }
 
 # Keyboard bindings
+# Emit CSI u sequences so tmux can distinguish control combos that legacy
+# terminals collapse onto other keys (Ctrl+I=Tab, Ctrl+M=Enter) or cannot
+# encode at all (Ctrl+, / Ctrl+.). Used for tmux workspace navigation.
 [[keyboard.bindings]]
 key = "I"
 mods = "Control"
 chars = "\u001b[105;5u"
+
+[[keyboard.bindings]]
+key = "M"
+mods = "Control"
+chars = "\u001b[109;5u"
+
+[[keyboard.bindings]]
+key = "Comma"
+mods = "Control"
+chars = "\u001b[44;5u"
+
+[[keyboard.bindings]]
+key = "Period"
+mods = "Control"
+chars = "\u001b[46;5u"
 
 [general]
 import = [
